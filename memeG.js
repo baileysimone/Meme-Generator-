@@ -30,14 +30,14 @@ document.addEventListener("DOMContentLoaded", function () {
     function createMeme(topText, bottomText, imageUrl) {
         const memeDiv = document.createElement("div");
         memeDiv.className = "meme";
+        
+        const topTextDiv = document.createElement("div");
+        topTextDiv.innerText = topText;
+        memeDiv.appendChild(topTextDiv);
 
         const memeImage = document.createElement("img");
         memeImage.src = imageUrl;
         memeDiv.appendChild(memeImage);
-
-        const topTextDiv = document.createElement("div");
-        topTextDiv.innerText = topText;
-        memeDiv.appendChild(topTextDiv);
 
         const bottomTextDiv = document.createElement("div");
         bottomTextDiv.innerText = bottomText;

@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#meme-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.meme {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    max-width: 300px;
+    background-color: #fff; /* Set a background color for the meme container */
+}
+
+.meme img {
+    max-width: 100%;
+    display: block; /* Make sure the image takes up the full width */
+}
+
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.meme-text {
+    position: absolute;
+    top: 50%; /* Vertically center text */
+    left: 0;
+    right: 0;
+    transform: translateY(-50%); /* Center the text vertically */
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    z-index: 1; /* Ensure the text appears on top of the image */
+}
